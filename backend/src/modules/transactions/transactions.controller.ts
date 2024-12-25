@@ -13,7 +13,7 @@ import {
 } from '@nestjs/common';
 import { AuthGuard } from '../auth/auth.guard';
 import { TransactionsService } from './transactions.service';
-import { ResponseInterceptor } from 'src/core/response.interceptor';
+import { ResponseInterceptor } from '../../core/response.interceptor';
 import ResponseConstants from '../../constants/response.constants';
 
 @UseGuards(AuthGuard)

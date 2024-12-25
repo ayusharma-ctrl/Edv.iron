@@ -6,7 +6,7 @@ import { AppService } from './app.service';
 import { AppConfig } from './config/configuration';
 import { AuthModule } from './modules/auth/auth.module';
 import { TransactionsModule } from './modules/transactions/transactions.module';
-import DatabaseConnection from 'src/lib/connection'
+import DatabaseConnection from './lib/connection';
 
 @Module({
   imports: [

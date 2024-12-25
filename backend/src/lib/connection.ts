@@ -1,7 +1,7 @@
 import { ConfigService } from '@nestjs/config';
 import { TypeOrmModuleOptions } from '@nestjs/typeorm';
-import { TransactionStatus } from 'src/models/transaction-status.model';
-import { Transaction } from 'src/models/transaction.model';
+import { TransactionStatus } from '../models/transaction-status.model';
+import { Transaction } from '../models/transaction.model';
 
 export default (configService: ConfigService): TypeOrmModuleOptions => {
   return {

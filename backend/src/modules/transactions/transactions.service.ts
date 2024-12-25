@@ -1,8 +1,8 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import ResponseConstants from '../../constants/response.constants';
-import { TransactionStatus } from 'src/models/transaction-status.model';
-import { Transaction } from 'src/models/transaction.model';
+import { TransactionStatus } from '../../models/transaction-status.model';
+import { Transaction } from '../../models/transaction.model';
 import { Repository } from 'typeorm';
 import { ObjectId } from 'mongodb';
 import { ConfigService } from '@nestjs/config';

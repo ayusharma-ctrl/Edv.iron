@@ -8,8 +8,8 @@ import { AuthService } from '../auth/auth.service';
 import { JwtService } from '@nestjs/jwt';
 import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { Transaction } from 'src/models/transaction.model';
-import { TransactionStatus } from 'src/models/transaction-status.model';
+import { Transaction } from '../../models/transaction.model';
+import { TransactionStatus } from '../../models/transaction-status.model';
 
 @Module({
   imports: [

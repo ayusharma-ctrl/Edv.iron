@@ -4,7 +4,7 @@ import {
   Injectable,
   NestInterceptor,
 } from '@nestjs/common';
-import { ResponseBaseDTO } from 'src/core/base.dto';
+import { ResponseBaseDTO } from './base.dto';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import ResponseConstants from '../constants/response.constants';
