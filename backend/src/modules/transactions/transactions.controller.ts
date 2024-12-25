@@ -14,7 +14,7 @@ import {
 import { AuthGuard } from '../auth/auth.guard';
 import { TransactionsService } from './transactions.service';
 import { ResponseInterceptor } from 'src/core/response.interceptor';
-import ResponseConstants from 'src/constants/response.constants';
+import ResponseConstants from '../../constants/response.constants';
 
 @UseGuards(AuthGuard)
 @Controller('transactions')

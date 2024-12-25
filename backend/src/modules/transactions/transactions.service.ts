@@ -1,6 +1,6 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import ResponseConstants from 'src/constants/response.constants';
+import ResponseConstants from '../../constants/response.constants';
 import { TransactionStatus } from 'src/models/transaction-status.model';
 import { Transaction } from 'src/models/transaction.model';
 import { Repository } from 'typeorm';

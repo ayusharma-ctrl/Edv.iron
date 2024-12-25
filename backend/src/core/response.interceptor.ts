@@ -7,7 +7,7 @@ import {
 import { ResponseBaseDTO } from 'src/core/base.dto';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import ResponseConstants from 'src/constants/response.constants';
+import ResponseConstants from '../constants/response.constants';
 
 @Injectable()
 export class ResponseInterceptor<T>
