@@ -14,10 +14,10 @@ async function bootstrap() {
 
   // setting up cors policy
   app.enableCors({
-    origin: true,
-    methods: 'GET, POST, OPTIONS',
-    allowedHeaders: ['Content-Type', 'Authorization'],
-    credentials: true,
+    origin: '*',
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    preflightContinue: false,
+    optionsSuccessStatus: 204
   });
 
   app.useGlobalInterceptors(new LoggingInterceptor()); // register global interceptors - this will log request info
@@ -25,6 +25,9 @@ async function bootstrap() {
   app.useGlobalFilters(new HttpExceptionFilter()); // resgister global filters - this will handle formatting of response for http exceptions
 
   app.useGlobalPipes(new ValidationPipe());
+
+  // add api to each routes
+  // app.setGlobalPrefix('api');
 
   // enable api versions - like - v1, v2
   app.enableVersioning({
