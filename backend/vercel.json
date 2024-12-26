@@ -12,8 +12,14 @@
             "dest": "src/main.ts",
             "methods": [
                 "GET",
-                "POST"
-            ]
+                "POST",
+                "OPTIONS"
+            ],
+            "headers": {
+                "Access-Control-Allow-Origin": "https://edviron-nine.vercel.app",
+                "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+                "Access-Control-Allow-Headers": "Content-Type, Authorization"
+            }
         }
     ]
 }

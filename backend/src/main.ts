@@ -14,10 +14,9 @@ async function bootstrap() {
 
   // setting up cors policy
   app.enableCors({
-    origin: '*',
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    preflightContinue: false,
-    optionsSuccessStatus: 204
+    origin: configService.get<string>('frontend_url'),
+    methods: 'GET,POST,OPTIONS',
+    allowedHeaders: ['Content-Type', 'Authorization'],
   });
 
   app.useGlobalInterceptors(new LoggingInterceptor()); // register global interceptors - this will log request info
