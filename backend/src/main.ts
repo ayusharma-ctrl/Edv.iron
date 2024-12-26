@@ -14,7 +14,7 @@ async function bootstrap() {
 
   // setting up cors policy
   app.enableCors({
-    origin: configService.get<string>('frontend_url'),
+    origin: true,
     methods: 'GET, POST, OPTIONS',
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true,
